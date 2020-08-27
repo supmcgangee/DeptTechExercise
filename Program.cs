@@ -6,7 +6,14 @@ namespace DeptTechExercise
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var server = new Server();
+            while(server.IsRunning())
+            {
+
+            }
+
+            Console.WriteLine("Server Closed");
+            Console.ReadKey();
         }
     }
 }

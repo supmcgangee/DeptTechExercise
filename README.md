@@ -7,3 +7,10 @@
  I dont have much planned as of creation, I considered TDD'ing my process, but decided against it due to time constraints.
  -
  Check the Commit History for a timeline of what I implemented.
+ 
+ 
+ 
+ First thing I wanted to do was to wrap the actual application in a While(!quit). 
+ I decided go ahead and create a Server class which will serve as a manager for the app.
+ For now I gave this class a method that returns false, IsRunning().
+ I also wrote a few lines for when the app closes.

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "DeptTechExercise/1.0.0": {
+        "runtime": {
+          "DeptTechExercise.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DeptTechExercise/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

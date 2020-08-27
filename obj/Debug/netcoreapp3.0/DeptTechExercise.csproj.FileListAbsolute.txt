@@ -1,0 +1,11 @@
+C:\Users\suppy\source\repos\DeptTechExercise\DeptTechExercise\bin\Debug\netcoreapp3.0\DeptTechExercise.exe
+C:\Users\suppy\source\repos\DeptTechExercise\DeptTechExercise\bin\Debug\netcoreapp3.0\DeptTechExercise.deps.json
+C:\Users\suppy\source\repos\DeptTechExercise\DeptTechExercise\bin\Debug\netcoreapp3.0\DeptTechExercise.runtimeconfig.json
+C:\Users\suppy\source\repos\DeptTechExercise\DeptTechExercise\bin\Debug\netcoreapp3.0\DeptTechExercise.runtimeconfig.dev.json
+C:\Users\suppy\source\repos\DeptTechExercise\DeptTechExercise\bin\Debug\netcoreapp3.0\DeptTechExercise.dll
+C:\Users\suppy\source\repos\DeptTechExercise\DeptTechExercise\bin\Debug\netcoreapp3.0\DeptTechExercise.pdb
+C:\Users\suppy\source\repos\DeptTechExercise\DeptTechExercise\obj\Debug\netcoreapp3.0\DeptTechExercise.csprojAssemblyReference.cache
+C:\Users\suppy\source\repos\DeptTechExercise\DeptTechExercise\obj\Debug\netcoreapp3.0\DeptTechExercise.AssemblyInfoInputs.cache
+C:\Users\suppy\source\repos\DeptTechExercise\DeptTechExercise\obj\Debug\netcoreapp3.0\DeptTechExercise.AssemblyInfo.cs
+C:\Users\suppy\source\repos\DeptTechExercise\DeptTechExercise\obj\Debug\netcoreapp3.0\DeptTechExercise.dll
+C:\Users\suppy\source\repos\DeptTechExercise\DeptTechExercise\obj\Debug\netcoreapp3.0\DeptTechExercise.pdb
