@@ -9,3 +9,7 @@ C:\Users\suppy\source\repos\DeptTechExercise\DeptTechExercise\obj\Debug\netcorea
 C:\Users\suppy\source\repos\DeptTechExercise\DeptTechExercise\obj\Debug\netcoreapp3.0\DeptTechExercise.AssemblyInfo.cs
 C:\Users\suppy\source\repos\DeptTechExercise\DeptTechExercise\obj\Debug\netcoreapp3.0\DeptTechExercise.dll
 C:\Users\suppy\source\repos\DeptTechExercise\DeptTechExercise\obj\Debug\netcoreapp3.0\DeptTechExercise.pdb
+C:\Users\suppy\source\repos\DeptTechExercise\DeptTechExercise\bin\Debug\netcoreapp3.0\System.Net.Http.Formatting.dll
+C:\Users\suppy\source\repos\DeptTechExercise\DeptTechExercise\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Users\suppy\source\repos\DeptTechExercise\DeptTechExercise\bin\Debug\netcoreapp3.0\Newtonsoft.Json.Bson.dll
+C:\Users\suppy\source\repos\DeptTechExercise\DeptTechExercise\obj\Debug\netcoreapp3.0\DeptTechExercise.csproj.CopyComplete
