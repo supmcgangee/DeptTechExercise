@@ -6,9 +6,30 @@ namespace DeptTechExercise
 {
     public class Server
     {
+        private static Server instance = null;
+
+        private bool isRunning = true;
+
+        private Server() { }
+
         public bool IsRunning()
         {
-            return false;
+            return isRunning;
+        }
+
+        public void CloseApp()
+        {
+            isRunning = false;
+        }
+
+        public static Server Instance()
+        {
+            if(instance == null)
+            {
+                instance = new Server();
+            }
+
+            return instance;
         }
     }
 }

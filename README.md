@@ -14,3 +14,11 @@
  I decided go ahead and create a Server class which will serve as a manager for the app.
  For now I gave this class a method that returns false, IsRunning().
  I also wrote a few lines for when the app closes.
+
+
+ Before I started messing around with data I wanted to make sure that I could show it.
+ I created a Writer class to do just this. It will also handle the user input.
+ For the initial Writer class process, It needed to see the Server, For this I changed the Server into a basic, thread locked, singleton.
+ I could have passed the server into the writer on construction, however I only want one server active. This will make future references to the server easier.
+
+ For now the writer has a message when the app starts, and asks the user whether to close the app. I will change this to allow for multiple inputs, to allow the user to specify parameters for their API request.

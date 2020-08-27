@@ -6,13 +6,15 @@ namespace DeptTechExercise
     {
         static void Main(string[] args)
         {
-            var server = new Server();
+            var server = Server.Instance();
+            var writer = new Writer();
+
             while(server.IsRunning())
             {
-
+                writer.Display();
             }
 
-            Console.WriteLine("Server Closed");
+            Console.WriteLine("\nServer Closed, Press any key");
             Console.ReadKey();
         }
     }
