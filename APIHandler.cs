@@ -17,9 +17,9 @@ namespace DeptTechExercise
             var response = requester.TestResponseAsync();
 
             if(response.Result.IsSuccessStatusCode)
-                return "Success: + " + response.Result.StatusCode.ToString();
+                return "Success code: + " + response.Result.StatusCode.ToString();
             else
-                return "Uh oh: + " + response.Result.StatusCode.ToString();
+                return "Uh oh coed: + " + response.Result.StatusCode.ToString();
         }
     }
 }

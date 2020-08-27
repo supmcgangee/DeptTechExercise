@@ -23,7 +23,7 @@ namespace DeptTechExercise
 
         public async Task<HttpResponseMessage> TestResponseAsync()
         {
-            var address = "https://api.openaq.org/beta/averages";
+            var address = "https://api.openaq.org/v1/cities";
             var response = await client.GetAsync(address);
             return response;
         }

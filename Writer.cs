@@ -23,9 +23,11 @@ namespace DeptTechExercise
 
         public void DisplayOptions()
         {
+            Console.WriteLine("\n\n");
             Console.WriteLine("What do you want to do?\n");
             Console.WriteLine("t : Test Response");
             Console.WriteLine("q : Quit");
+            Console.WriteLine();
         }
 
         public void RegisterInput()

@@ -32,3 +32,8 @@
  To handle API requests, I created the creativly named API Handler and API Requester classes.
  The Requester class will connect to the API and return its responses. 
  The Handler class will convert this to data models. It will also handle the user inputs, converting those into parameter data.
+
+ -
+
+ I wrote the code to get a response, and the code to display it. And hooray, it displays... (an error code).
+ Luckily, it was an "internal server error". After manually checking the endponts in my browser, it seems that the beta endpoints failed. I changed the endpoint to another which worked and its working as intened.
