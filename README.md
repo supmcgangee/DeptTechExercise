@@ -28,3 +28,7 @@
 
  So currently there is nothing seperating this from a basic console app, to change that im going to make a make a request to the server. My Idea for this first is not to mess around with any data, but to check for a response.
  I want to make a "Test Response" option on the user input and for now, display the response code. E.g 200 or 400.
+
+ To handle API requests, I created the creativly named API Handler and API Requester classes.
+ The Requester class will connect to the API and return its responses. 
+ The Handler class will convert this to data models. It will also handle the user inputs, converting those into parameter data.

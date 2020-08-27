@@ -6,15 +6,20 @@ namespace DeptTechExercise
 {
     public class Server
     {
-        private static Server instance = null;
-
         private bool isRunning = true;
 
-        private Server() { }
+        private static Server instance = null;
+        private APIHandler handler;
+
+
+        private Server() 
+        {
+            handler = new APIHandler();
+        }
 
         public string TestResponse()
         {
-            return "TODO";
+            return handler.TestResponse();
         }
 
         public bool IsRunning()
