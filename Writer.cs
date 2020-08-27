@@ -6,8 +6,11 @@ namespace DeptTechExercise
 {
     public class Writer
     {
+        private Server server;
+
         public Writer()
         {
+            server = Server.Instance();
             Console.WriteLine("Welcome My AQ app that does AQ things\n\n");
         }
 
@@ -21,23 +24,24 @@ namespace DeptTechExercise
         public void DisplayOptions()
         {
             Console.WriteLine("What do you want to do?\n");
-            Console.WriteLine("Close app: \ty - n?");
+            Console.WriteLine("t : Test Response");
+            Console.WriteLine("q : Quit");
         }
 
         public void RegisterInput()
         {
-            var server = Server.Instance();
             var input = Console.ReadKey();
 
             switch(input.KeyChar)
             {
-                case 'y':
+                case 'q':
                     server.CloseApp();
                     break;
-                case 'n':
+                case 't':
+                    Console.WriteLine("\n Response:" + server.TestResponse());
                     break;
                 default:
-                    Console.WriteLine("Invalid Char");
+                    Console.WriteLine("\nInvalid Char");
                     break;
             }
         }

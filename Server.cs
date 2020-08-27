@@ -12,6 +12,11 @@ namespace DeptTechExercise
 
         private Server() { }
 
+        public string TestResponse()
+        {
+            return "TODO";
+        }
+
         public bool IsRunning()
         {
             return isRunning;
