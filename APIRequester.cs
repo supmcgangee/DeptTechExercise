@@ -6,24 +6,31 @@ using System.Threading.Tasks;
 
 namespace DeptTechExercise
 {
-    public class APIRequester
+    public static class APIRequester
     {
-        private HttpClient client;
+        private static HttpClient client;
 
-        public APIRequester()
+        static APIRequester()
         {
             client = InitClient();
         }
 
-        private HttpClient InitClient()
+        private static HttpClient InitClient()
         {
             var client = new HttpClient();
             return client;
         }
 
-        public async Task<HttpResponseMessage> TestResponseAsync()
+        public static async Task<HttpResponseMessage> TestResponseAsync()
         {
             var address = "https://api.openaq.org/v1/cities";
+            var response = await client.GetAsync(address);
+            return response;
+        }
+
+        public static async Task<HttpResponseMessage> GetMeasurementsAsync(string city)
+        {
+            var address = $"https://api.openaq.org/v1/latest?city={city}";
             var response = await client.GetAsync(address);
             return response;
         }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DeptTechExercise.Models;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -20,6 +21,11 @@ namespace DeptTechExercise
         public string TestResponse()
         {
             return handler.TestResponse();
+        }
+
+        public QueryResponseModel GetMeasurementsForCity(string city)
+        {
+            return handler.GetMeasurementsForCity(city);
         }
 
         public bool IsRunning()

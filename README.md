@@ -36,4 +36,20 @@
  -
 
  I wrote the code to get a response, and the code to display it. And hooray, it displays... (an error code).
- Luckily, it was an "internal server error". After manually checking the endponts in my browser, it seems that the beta endpoints failed. I changed the endpoint to another which worked and its working as intened.
+ Luckily, it was an "internal server error". After manually checking the endponts in my browser, it seems that the beta endpoints failed. I changed the endpoint to another which worked and its working as intended.
+
+ -
+
+ So... err... measurements, for a city I guess. <Adjusts cap> I choose you! Burgenland!
+
+ For this I created the needed data models that will be returned. It returns meta data and other things that I do not need, however I'm not currently aware of a way to trim excess data. I don't want to spend excess time on this so although inefficient, it is fine.
+
+ I should note that, I am aware this is inperfect and there are areas that are 'bad practice'. But I want to keep on moving in a timely manner. As of this point I've been working for ~ 2.5 hours on this.
+
+ Similar to my previous API call, I setup the endpoint of the app and the methods passing through the app. Writer > Server > API Handler > API Requester. This time however it passes through a string which is the city Query. Using Newtonsoft.Json I convert it into my model.
+
+ Tested it and it works as intened. I did get a lot of data, ~20 results. As an option for expanding, We could organise and sort response type, or by date. I will leave it as it is.
+
+ -
+
+ I think as one of the last things, I want the user to be able to input a city. 

@@ -9,6 +9,6 @@ namespace DeptTechExercise.Models
         public string locationId;
         public string cityName;
         public string country;
-        public List<MeasurementModel> measurements;
+        public List<MeasurementModel> measurements = new List<MeasurementModel>();
     }
 }
