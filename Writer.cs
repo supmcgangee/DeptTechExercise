@@ -25,48 +25,47 @@ namespace DeptTechExercise
 
         private void DisplayOptions()
         {
-            Console.WriteLine("\n\n");
-            Console.WriteLine("What do you want to do?\n");
-            Console.WriteLine("t : Test Response");
-            Console.WriteLine("b : Lets Check Burgenland");
-            Console.WriteLine("q : Quit");
+            Console.WriteLine("Please enter a city name. (Case Sensitive)\n");
+            Console.WriteLine("\t'Test' to test connection to the API");
+            Console.WriteLine("\t'q' to close the app.");
             Console.WriteLine();
         }
 
         private void RegisterInput()
         {
-            var input = Console.ReadKey();
+            var input = Console.ReadLine();
 
-            switch(input.KeyChar)
+            switch(input.ToLower())
             {
-                case 't':
+                case "test":
                     Console.WriteLine("\n Response:" + server.TestResponse());
                     break;
-                case 'b':
-                    DisplayResponseForCity();
-                    break;
-                case 'q':
+                case "q":
                     server.CloseApp();
                     break;
                 default:
-                    Console.WriteLine("\nInvalid Char");
+                    SearchForCity(input);
                     break;
             }
         }
 
-        private void DisplayResponseForCity()
+        private void SearchForCity(string input)
         {
-            // Set as param
-            var city = "Burgenland";
-            var data = server.GetMeasurementsForCity(city);
+            var queryData = server.GetMeasurementsForCity(input);
+            if (queryData.meta.found != 0)
+                DisplayResponseForCity(queryData);
+            else
+                Console.WriteLine("\n* No data found for searched City *");
+        }
 
-            
+        private void DisplayResponseForCity(QueryResponseModel queryData)
+        {
             Console.WriteLine();
             Console.WriteLine("\nMeasurements");
 
             // vvv - This block can be better. I dont want to spend to much time on it, This is fine. 
             var allMeasuremnts = new List<MeasurementModel>();
-            data.results.Select(x => x.measurements)
+            queryData.results.Select(x => x.measurements)
                         .ToList()
                         .ForEach(list =>
                         {
