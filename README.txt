@@ -52,4 +52,16 @@
 
  -
 
- I think as one of the last things, I want the user to be able to input a city. 
+ I think as one of the last things, I want the user to be able to input a city. I changed the ReadKey to a ReadLine, adjusted the initial user prompt and added an edge case incase that no results are found.
+
+ -
+
+ Since It is feature incomplete and I feel like it needs a little few touches, I'll add the sorting I mentioned earlier. Since I already have all the data, Im going to create another while loop which will act as a submenu. 
+
+ I refactored a bit and added the filter menus. its a bit procedural and there is code in multiple places. I am content leaving it as this as I dont want to go overboard. Main thing I dont like is the filter option loops I made. Moving this down a level to a submenu class would be better practice. But oh well.
+
+ With that, Im happy with where it is. I think it definately can be inproved. I think this is fine of what I was asked. I spent around 6 hours on this. 
+
+ The github link can be found here https://github.com/supmcgangee/DeptTechExercise
+
+ Feel free to get in touch if you have any questions.
